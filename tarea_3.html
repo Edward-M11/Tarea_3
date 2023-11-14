@@ -1,0 +1,1247 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Ejercicio para entregar &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'tarea_3';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/UN.jpeg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/UN.jpeg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Ejercicio para entregar</a></li>
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Ftarea_3.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/tarea_3.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Ejercicio para entregar</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Ejercicio para entregar</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#descargue-el-conjunto-de-datos-y-formateelo-como-un-dataframe-de-pandas">1. Descargue el conjunto de datos y formatéelo como un DataFrame de pandas.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#filtrar-el-dataframe-para-ganadores-de-medallas-de-2016">2. Filtrar el DataFrame para Ganadores de Medallas de 2016</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#descubrir-las-medallas-concedidas-en-2016-por-deporte">3. Descubrir las Medallas Concedidas en 2016 por Deporte</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enumerar-los-cinco-deportes-mas-importantes">4. Enumerar los Cinco Deportes Más Importantes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generar-un-grafico-de-barras-para-los-cinco-deportes-principales">5. Generar un Gráfico de Barras para los Cinco Deportes Principales</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generar-un-histograma-para-la-edad-de-los-ganadores-de-medallas">6. Generar un Histograma para la Edad de los Ganadores de Medallas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grafico-de-barras-de-medallas-por-equipo-nacional">7. Gráfico de Barras de Medallas por Equipo Nacional</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grafico-de-barras-del-peso-medio-por-genero">8. Gráfico de Barras del Peso Medio por Género</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#segunda-parte">Segunda parte</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#filtrar-el-dataframe-para-ganadores-de-medallas-de-2016-en-los-deportes-especificos">2. Filtrar el DataFrame para Ganadores de Medallas de 2016 en los Deportes Específicos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#observar-las-caracteristicas-del-conjunto-de-datos">3. Observar las Características del Conjunto de Datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-para-patron-global-de-height-y-weight">4. Visualización para Patrón Global de Height y Weight</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-de-estadisticas-resumidas-de-height-y-weight-por-tipo-de-medalla-y-genero">5. Visualización de Estadísticas Resumidas de Height y Weight por Tipo de Medalla y Género</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="ejercicio-para-entregar">
+<h1>Ejercicio para entregar<a class="headerlink" href="#ejercicio-para-entregar" title="Permalink to this heading">#</a></h1>
+<p>Edward Morales - Julian Acevedo</p>
+<section id="descargue-el-conjunto-de-datos-y-formateelo-como-un-dataframe-de-pandas">
+<h2>1. Descargue el conjunto de datos y formatéelo como un DataFrame de pandas.<a class="headerlink" href="#descargue-el-conjunto-de-datos-y-formateelo-como-un-dataframe-de-pandas" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/lihkirun/AppliedStatisticMS/main/DataVisualizationRPython/Lectures/Python/PythonDataSets/athlete_events.csv&quot;</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>Height</th>
+      <th>Weight</th>
+      <th>Team</th>
+      <th>NOC</th>
+      <th>Games</th>
+      <th>Year</th>
+      <th>Season</th>
+      <th>City</th>
+      <th>Sport</th>
+      <th>Event</th>
+      <th>Medal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>A Dijiang</td>
+      <td>M</td>
+      <td>24.0</td>
+      <td>180.0</td>
+      <td>80.0</td>
+      <td>China</td>
+      <td>CHN</td>
+      <td>1992 Summer</td>
+      <td>1992</td>
+      <td>Summer</td>
+      <td>Barcelona</td>
+      <td>Basketball</td>
+      <td>Basketball Men's Basketball</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>A Lamusi</td>
+      <td>M</td>
+      <td>23.0</td>
+      <td>170.0</td>
+      <td>60.0</td>
+      <td>China</td>
+      <td>CHN</td>
+      <td>2012 Summer</td>
+      <td>2012</td>
+      <td>Summer</td>
+      <td>London</td>
+      <td>Judo</td>
+      <td>Judo Men's Extra-Lightweight</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>Gunnar Nielsen Aaby</td>
+      <td>M</td>
+      <td>24.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Denmark</td>
+      <td>DEN</td>
+      <td>1920 Summer</td>
+      <td>1920</td>
+      <td>Summer</td>
+      <td>Antwerpen</td>
+      <td>Football</td>
+      <td>Football Men's Football</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>Edgar Lindenau Aabye</td>
+      <td>M</td>
+      <td>34.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Denmark/Sweden</td>
+      <td>DEN</td>
+      <td>1900 Summer</td>
+      <td>1900</td>
+      <td>Summer</td>
+      <td>Paris</td>
+      <td>Tug-Of-War</td>
+      <td>Tug-Of-War Men's Tug-Of-War</td>
+      <td>Gold</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>Christine Jacoba Aaftink</td>
+      <td>F</td>
+      <td>21.0</td>
+      <td>185.0</td>
+      <td>82.0</td>
+      <td>Netherlands</td>
+      <td>NED</td>
+      <td>1988 Winter</td>
+      <td>1988</td>
+      <td>Winter</td>
+      <td>Calgary</td>
+      <td>Speed Skating</td>
+      <td>Speed Skating Women's 500 metres</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Eliminacion de la comuna “ID”</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;ID&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>Height</th>
+      <th>Weight</th>
+      <th>Team</th>
+      <th>NOC</th>
+      <th>Games</th>
+      <th>Year</th>
+      <th>Season</th>
+      <th>City</th>
+      <th>Sport</th>
+      <th>Event</th>
+      <th>Medal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>A Dijiang</td>
+      <td>M</td>
+      <td>24.0</td>
+      <td>180.0</td>
+      <td>80.0</td>
+      <td>China</td>
+      <td>CHN</td>
+      <td>1992 Summer</td>
+      <td>1992</td>
+      <td>Summer</td>
+      <td>Barcelona</td>
+      <td>Basketball</td>
+      <td>Basketball Men's Basketball</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>A Lamusi</td>
+      <td>M</td>
+      <td>23.0</td>
+      <td>170.0</td>
+      <td>60.0</td>
+      <td>China</td>
+      <td>CHN</td>
+      <td>2012 Summer</td>
+      <td>2012</td>
+      <td>Summer</td>
+      <td>London</td>
+      <td>Judo</td>
+      <td>Judo Men's Extra-Lightweight</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Gunnar Nielsen Aaby</td>
+      <td>M</td>
+      <td>24.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Denmark</td>
+      <td>DEN</td>
+      <td>1920 Summer</td>
+      <td>1920</td>
+      <td>Summer</td>
+      <td>Antwerpen</td>
+      <td>Football</td>
+      <td>Football Men's Football</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Edgar Lindenau Aabye</td>
+      <td>M</td>
+      <td>34.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Denmark/Sweden</td>
+      <td>DEN</td>
+      <td>1900 Summer</td>
+      <td>1900</td>
+      <td>Summer</td>
+      <td>Paris</td>
+      <td>Tug-Of-War</td>
+      <td>Tug-Of-War Men's Tug-Of-War</td>
+      <td>Gold</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Christine Jacoba Aaftink</td>
+      <td>F</td>
+      <td>21.0</td>
+      <td>185.0</td>
+      <td>82.0</td>
+      <td>Netherlands</td>
+      <td>NED</td>
+      <td>1988 Winter</td>
+      <td>1988</td>
+      <td>Winter</td>
+      <td>Calgary</td>
+      <td>Speed Skating</td>
+      <td>Speed Skating Women's 500 metres</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Información general del DataFrame</span>
+<span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 271116 entries, 0 to 271115
+Data columns (total 14 columns):
+ #   Column  Non-Null Count   Dtype  
+---  ------  --------------   -----  
+ 0   Name    271116 non-null  object 
+ 1   Sex     271116 non-null  object 
+ 2   Age     261642 non-null  float64
+ 3   Height  210945 non-null  float64
+ 4   Weight  208241 non-null  float64
+ 5   Team    271116 non-null  object 
+ 6   NOC     271116 non-null  object 
+ 7   Games   271116 non-null  object 
+ 8   Year    271116 non-null  int64  
+ 9   Season  271116 non-null  object 
+ 10  City    271116 non-null  object 
+ 11  Sport   271116 non-null  object 
+ 12  Event   271116 non-null  object 
+ 13  Medal   39783 non-null   object 
+dtypes: float64(3), int64(1), object(10)
+memory usage: 29.0+ MB
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Resumen estadístico de las columnas numéricas</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                 Age         Height         Weight           Year
+count  261642.000000  210945.000000  208241.000000  271116.000000
+mean       25.556898     175.338970      70.702393    1978.378480
+std         6.393561      10.518462      14.348020      29.877632
+min        10.000000     127.000000      25.000000    1896.000000
+25%        21.000000     168.000000      60.000000    1960.000000
+50%        24.000000     175.000000      70.000000    1988.000000
+75%        28.000000     183.000000      79.000000    2002.000000
+max        97.000000     226.000000     214.000000    2016.000000
+</pre></div>
+</div>
+</div>
+</div>
+<p>En esta caso no tiene sentido analizar Year, en Age podemos ver que la edad probedio de los atletas es 25, muy cercana a la mediana por lo que podrian ser simetricos, la edad minimo y maxima estan muy separadas (ambas algo raras, 10 años es muy joven y 97 muy mayor pero son posibles), pero la desviación estandar no es muy grande. Para el peso y la altura pasa lo mismo la media y la mediana casi que iguales, pero estas ya tiene una desviación estanda un poco más grande, pero controlada.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Contar valores únicos en una columna específica, por ejemplo, &#39;Team&#39;, en este caso, el pais</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Team&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+
+<span class="c1"># Número de valores únicos en cada columna</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">nunique</span><span class="p">())</span>
+
+<span class="c1"># Valores únicos en una columna específica, por ejemplo, &#39;Medal&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Medal&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Team
+United States    17847
+France           11988
+Great Britain    11404
+Italy            10260
+Germany           9326
+                 ...  
+Briar                1
+Hannover             1
+Nan-2                1
+Brentina             1
+Digby                1
+Name: count, Length: 1184, dtype: int64
+Name      134732
+Sex            2
+Age           74
+Height        95
+Weight       220
+Team        1184
+NOC          230
+Games         51
+Year          35
+Season         2
+City          42
+Sport         66
+Event        765
+Medal          3
+dtype: int64
+[nan &#39;Gold&#39; &#39;Bronze&#39; &#39;Silver&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="filtrar-el-dataframe-para-ganadores-de-medallas-de-2016">
+<h2>2. Filtrar el DataFrame para Ganadores de Medallas de 2016<a class="headerlink" href="#filtrar-el-dataframe-para-ganadores-de-medallas-de-2016" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_2016</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2016</span><span class="p">)</span> <span class="o">&amp;</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Medal&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">notna</span><span class="p">()]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="descubrir-las-medallas-concedidas-en-2016-por-deporte">
+<h2>3. Descubrir las Medallas Concedidas en 2016 por Deporte<a class="headerlink" href="#descubrir-las-medallas-concedidas-en-2016-por-deporte" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">medals_by_sport</span> <span class="o">=</span> <span class="n">df_2016</span><span class="p">[</span><span class="s1">&#39;Sport&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">medals_by_sport</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Sport
+Athletics                192
+Swimming                 191
+Rowing                   144
+Football                 106
+Hockey                    99
+Handball                  89
+Cycling                   84
+Canoeing                  82
+Water Polo                78
+Rugby Sevens              74
+Basketball                72
+Volleyball                72
+Wrestling                 72
+Gymnastics                66
+Fencing                   65
+Judo                      56
+Boxing                    51
+Sailing                   45
+Shooting                  45
+Equestrianism             45
+Weightlifting             45
+Diving                    36
+Taekwondo                 32
+Synchronized Swimming     32
+Badminton                 24
+Tennis                    24
+Table Tennis              24
+Archery                   24
+Rhythmic Gymnastics       18
+Beach Volleyball          12
+Triathlon                  6
+Modern Pentathlon          6
+Trampolining               6
+Golf                       6
+Name: count, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="enumerar-los-cinco-deportes-mas-importantes">
+<h2>4. Enumerar los Cinco Deportes Más Importantes<a class="headerlink" href="#enumerar-los-cinco-deportes-mas-importantes" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">top_five_sports</span> <span class="o">=</span> <span class="n">medals_by_sport</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="n">top_five_sports</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Athletics&#39;, &#39;Swimming&#39;, &#39;Rowing&#39;, &#39;Football&#39;, &#39;Hockey&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="generar-un-grafico-de-barras-para-los-cinco-deportes-principales">
+<h2>5. Generar un Gráfico de Barras para los Cinco Deportes Principales<a class="headerlink" href="#generar-un-grafico-de-barras-para-los-cinco-deportes-principales" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">medals_by_sport</span> <span class="o">=</span> <span class="n">medals_by_sport</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">medals_by_sport</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Número de Medallas por Deporte en 2016&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Deporte&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Número de Medallas&#39;</span><span class="p">)</span>
+
+<span class="c1"># Agregar el valor exacto encima de cada barra</span>
+<span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">patches</span><span class="p">:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">get_height</span><span class="p">()),</span> <span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span> <span class="o">*</span> <span class="mf">1.05</span><span class="p">,</span> <span class="n">p</span><span class="o">.</span><span class="n">get_height</span><span class="p">()</span> <span class="o">*</span> <span class="mf">1.005</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/db98591933ced61c665d7dcce4bf76ee06384e8d1d1ef0344b906df20c2c8cff.png" src="_images/db98591933ced61c665d7dcce4bf76ee06384e8d1d1ef0344b906df20c2c8cff.png" />
+</div>
+</div>
+<p>Se ve claramnete el numero de medallas totales entrgas por cada deporte, siendo el primero el atletismo con 192 y el quinto Hockey con 99.</p>
+</section>
+<section id="generar-un-histograma-para-la-edad-de-los-ganadores-de-medallas">
+<h2>6. Generar un Histograma para la Edad de los Ganadores de Medallas<a class="headerlink" href="#generar-un-histograma-para-la-edad-de-los-ganadores-de-medallas" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_2016</span><span class="p">[</span><span class="n">df_2016</span><span class="p">[</span><span class="s1">&#39;Sport&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">top_five_sports</span><span class="p">)][</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;hist&#39;</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribución de la Edad de los Ganadores de Medallas en 2016&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Edad&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frecuencia&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/67fafd0709eaed6157c46d2381453313a436930066e77c9f5d695c2ca3bbf1fb.png" src="_images/67fafd0709eaed6157c46d2381453313a436930066e77c9f5d695c2ca3bbf1fb.png" />
+</div>
+</div>
+<p>Aqui vemos algo parecido a lo que analisamos antes, la mediana es 25 aporx y en su mayoria gana los deportistas entre 20 y 30 años</p>
+</section>
+<section id="grafico-de-barras-de-medallas-por-equipo-nacional">
+<h2>7. Gráfico de Barras de Medallas por Equipo Nacional<a class="headerlink" href="#grafico-de-barras-de-medallas-por-equipo-nacional" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">medals_by_team</span> <span class="o">=</span> <span class="n">df_2016</span><span class="p">[</span><span class="n">df_2016</span><span class="p">[</span><span class="s1">&#39;Sport&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">top_five_sports</span><span class="p">)]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Team&#39;</span><span class="p">)[</span><span class="s1">&#39;Medal&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">medals_by_team</span> <span class="o">=</span> <span class="n">medals_by_team</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="c1"># Muestra los 10 equipos principales</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">medals_by_team</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Medallas por Equipo Nacional en los Cinco Deportes Principales en 2016&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Equipo&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Número de Medallas&#39;</span><span class="p">)</span>
+
+<span class="c1"># Agregar el valor exacto encima de cada barra</span>
+<span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">patches</span><span class="p">:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">get_height</span><span class="p">()),</span> <span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span> <span class="o">*</span> <span class="mf">1.005</span><span class="p">,</span> <span class="n">p</span><span class="o">.</span><span class="n">get_height</span><span class="p">()</span> <span class="o">*</span> <span class="mf">1.005</span><span class="p">))</span>
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/05cc97947a80a42fe451d0cb933aaf3a41bd08910c38757d213e203c8170aa3b.png" src="_images/05cc97947a80a42fe451d0cb933aaf3a41bd08910c38757d213e203c8170aa3b.png" />
+</div>
+</div>
+<p>Aqui se identifaca los 10 países  que más medallas ganaron en estos 5 deportes considerados más importantes en 2016, siendo el lider USA, seguido de Alemania e Inglaterra.</p>
+</section>
+<section id="grafico-de-barras-del-peso-medio-por-genero">
+<h2>8. Gráfico de Barras del Peso Medio por Género<a class="headerlink" href="#grafico-de-barras-del-peso-medio-por-genero" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">average_weight</span> <span class="o">=</span> <span class="n">df_2016</span><span class="p">[</span><span class="n">df_2016</span><span class="p">[</span><span class="s1">&#39;Sport&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">top_five_sports</span><span class="p">)]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Sex&#39;</span><span class="p">)[</span><span class="s1">&#39;Weight&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">average_weight</span> <span class="o">=</span> <span class="n">average_weight</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Peso Medio de Atletas Ganadores por Género en 2016&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Género&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Peso Medio (kg)&#39;</span><span class="p">)</span>
+
+<span class="c1"># Agregar el valor exacto encima de cada barra</span>
+<span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">average_weight</span><span class="o">.</span><span class="n">patches</span><span class="p">:</span>
+    <span class="n">average_weight</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">p</span><span class="o">.</span><span class="n">get_height</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span> <span class="o">+</span> <span class="n">p</span><span class="o">.</span><span class="n">get_width</span><span class="p">()</span> <span class="o">/</span> <span class="mf">2.</span><span class="p">,</span> <span class="n">p</span><span class="o">.</span><span class="n">get_height</span><span class="p">()),</span>
+                            <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="n">textcoords</span><span class="o">=</span><span class="s1">&#39;offset points&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/dae491ced712ecfef7dc625b813b63cfcdc2ad0f571bb1d64583291d71b97831.png" src="_images/dae491ced712ecfef7dc625b813b63cfcdc2ad0f571bb1d64583291d71b97831.png" />
+</div>
+</div>
+<p>En este grafico se ve el peso medio de los deportistas segun el genero (los que participaron en las 5 competencias más importantes en 2016), y se ve como en los hombres de de 81.81 Kilogramos mientras la smujeres pesan en promedio 65.25</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="segunda-parte">
+<h1>Segunda parte<a class="headerlink" href="#segunda-parte" title="Permalink to this heading">#</a></h1>
+<section id="filtrar-el-dataframe-para-ganadores-de-medallas-de-2016-en-los-deportes-especificos">
+<h2>2. Filtrar el DataFrame para Ganadores de Medallas de 2016 en los Deportes Específicos<a class="headerlink" href="#filtrar-el-dataframe-para-ganadores-de-medallas-de-2016-en-los-deportes-especificos" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sports</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Athletics&#39;</span><span class="p">,</span> <span class="s1">&#39;Swimming&#39;</span><span class="p">,</span> <span class="s1">&#39;Rowing&#39;</span><span class="p">,</span> <span class="s1">&#39;Football&#39;</span><span class="p">,</span> <span class="s1">&#39;Hockey&#39;</span><span class="p">]</span>
+<span class="n">df_2016_sports</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2016</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Sport&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">sports</span><span class="p">))</span> <span class="o">&amp;</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Medal&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">notna</span><span class="p">()]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="observar-las-caracteristicas-del-conjunto-de-datos">
+<h2>3. Observar las Características del Conjunto de Datos<a class="headerlink" href="#observar-las-caracteristicas-del-conjunto-de-datos" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df_2016_sports</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">df_2016_sports</span><span class="o">.</span><span class="n">info</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>              Age      Height      Weight    Year
+count  732.000000  729.000000  727.000000   732.0
+mean    25.577869  180.023320   73.720770  2016.0
+std      4.451373   10.076398   14.279014     0.0
+min     16.000000  150.000000   40.000000  2016.0
+25%     22.000000  173.000000   64.000000  2016.0
+50%     25.000000  180.000000   72.000000  2016.0
+75%     29.000000  187.000000   82.000000  2016.0
+max     40.000000  207.000000  136.000000  2016.0
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+Index: 732 entries, 158 to 271019
+Data columns (total 14 columns):
+ #   Column  Non-Null Count  Dtype  
+---  ------  --------------  -----  
+ 0   Name    732 non-null    object 
+ 1   Sex     732 non-null    object 
+ 2   Age     732 non-null    float64
+ 3   Height  729 non-null    float64
+ 4   Weight  727 non-null    float64
+ 5   Team    732 non-null    object 
+ 6   NOC     732 non-null    object 
+ 7   Games   732 non-null    object 
+ 8   Year    732 non-null    int64  
+ 9   Season  732 non-null    object 
+ 10  City    732 non-null    object 
+ 11  Sport   732 non-null    object 
+ 12  Event   732 non-null    object 
+ 13  Medal   732 non-null    object 
+dtypes: float64(3), int64(1), object(10)
+memory usage: 85.8+ KB
+None
+</pre></div>
+</div>
+</div>
+</div>
+<p>Podemos ver una descripcion genaral de los datos y que contiene cada variable.</p>
+</section>
+<section id="visualizacion-para-patron-global-de-height-y-weight">
+<h2>4. Visualización para Patrón Global de Height y Weight<a class="headerlink" href="#visualizacion-para-patron-global-de-height-y-weight" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+<span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_2016_sports</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Height&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Weight&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;Sport&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribución de Altura y Peso por Deporte en Ganadores de Medallas 2016&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Altura (cm)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Peso (kg)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/40b62fe30f6030bccf7cd9bdb7feef65892fc4d36f4d85f4464982e1b387d2b2.png" src="_images/40b62fe30f6030bccf7cd9bdb7feef65892fc4d36f4d85f4464982e1b387d2b2.png" />
+</div>
+</div>
+<p>El análisis de los datos de altura y peso de los atletas revela una correlación general: a mayor altura, suele incrementarse el peso. Esta tendencia se observa claramente en los deportes analizados. En particular, los atletas de remo muestran una notable cohesión en sus medidas, con alturas y pesos que tienden a agruparse estrechamente. Similarmente, los nadadores, futbolistas y jugadores de hockey presentan patrones de peso y altura comparables dentro de sus respectivos grupos.</p>
+<p>Sin embargo, un caso interesante es el atletismo, donde se observa una amplia variabilidad en las medidas de los atletas. A pesar de la diversidad en la altura, los pesos de los atletas de atletismo varían significativamente, reflejando la diversidad de disciplinas dentro de este deporte. Esta dispersión sugiere que el atletismo, a diferencia de otros deportes, agrupa una gama más amplia de tipos corporales, adaptados a las diferentes especialidades atléticas.</p>
+</section>
+<section id="visualizacion-de-estadisticas-resumidas-de-height-y-weight-por-tipo-de-medalla-y-genero">
+<h2>5. Visualización de Estadísticas Resumidas de Height y Weight por Tipo de Medalla y Género<a class="headerlink" href="#visualizacion-de-estadisticas-resumidas-de-height-y-weight-por-tipo-de-medalla-y-genero" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Filtrar por género</span>
+<span class="n">df_2016_males</span> <span class="o">=</span> <span class="n">df_2016_sports</span><span class="p">[</span><span class="n">df_2016_sports</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;M&#39;</span><span class="p">]</span>
+<span class="n">df_2016_females</span> <span class="o">=</span> <span class="n">df_2016_sports</span><span class="p">[</span><span class="n">df_2016_sports</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;F&#39;</span><span class="p">]</span>
+
+<span class="c1"># Altura para hombres</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Sport&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Height&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;Medal&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df_2016_males</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;Set2&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribución de Altura por Medalla y Deporte para Hombres en 2016&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Deporte&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Altura (cm)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Medalla&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/1c4953b923b0da8e1cabaf54268950cee45a5ab92eb83143fd0c125e10ec2003.png" src="_images/1c4953b923b0da8e1cabaf54268950cee45a5ab92eb83143fd0c125e10ec2003.png" />
+</div>
+</div>
+<p>En el gráfico los deportistas de remo y los jugadores de hockey con oro muestran medianas de altura superiores en sus respectivos deportes. En contraste, el fútbol presenta la mayor variabilidad de alturas, especialmente entre los ganadores de medallas de oro, con varios valores atípicos. El atletismo muestra una tendencia interesante donde los ganadores de oro son muy similares a los de brone.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Altura para mujeres</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Sport&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Height&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;Medal&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df_2016_females</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;Set2&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribución de Altura por Medalla y Deporte para Mujeres en 2016&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Deporte&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Altura (cm)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Medalla&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/b6c1897d55b44047b13425d3ced9893164bc3751b5da23abd9d583c85cc489dc.png" src="_images/b6c1897d55b44047b13425d3ced9893164bc3751b5da23abd9d583c85cc489dc.png" />
+</div>
+</div>
+<p>Este gráfico muestra la distribución de la altura de las deportistas femeninas que ganaron medallas en los Juegos Olímpicos de 2016, diferenciada por deporte y tipo de medalla. En el remo, las atletas muestran una altura similar para las medallas de plata y oro, pero las ganadoras de bronce tienden a ser ligeramente más altas, sugiriendo que la altura puede ser un factor importante en este deporte. En el atletismo, hay una amplia variabilidad en la altura, reflejando la diversidad de eventos dentro de este deporte. Las jugadoras de fútbol tienden a ser más bajas en promedio, especialmente las que ganaron bronce, indicando que la altura no es un factor crítico en el fútbol. En el hockey, las alturas están bastante agrupadas, con algunos valores atípicos, mientras que en la natación, las nadadoras tienden a ser más altas en comparación con otros deportes, lo que podría indicar una ventaja de la altura en este deporte. En general, el gráfico revela cómo la importancia de la altura varía entre diferentes deportes y cómo puede influir en el rendimiento y el éxito olímpico.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Peso para hombres</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Sport&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Weight&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;Medal&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df_2016_males</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;Set2&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribución de Peso por Medalla y Deporte para Hombres en 2016&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Deporte&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Peso (kg)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Medalla&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/13877d100d7be62b2edbe7a039721b893376fe71d9dea5fd69b7e63b74fda7cf.png" src="_images/13877d100d7be62b2edbe7a039721b893376fe71d9dea5fd69b7e63b74fda7cf.png" />
+</div>
+</div>
+<p>Este gráfico ilustra la distribución del peso de los deportistas que ganaron medallas en los Juegos Olímpicos de 2016, con un enfoque en cómo varía este parámetro entre los diferentes deportes y tipos de medalla. En el remo, observamos que los atletas que ganaron medallas de bronce y plata tienen pesos muy similares, mientras que los ganadores de oro tienden a ser ligeramente más pesados, lo que sugiere que un mayor peso podría ser ventajoso en este deporte. En la natación, hay una notable variabilidad en el peso, con los ganadores de bronce generalmente más ligeros, alrededor de 80 kg, y los de oro ligeramente más pesados, incluyendo algunos atípicos en este rango. En el fútbol, los jugadores suelen tener pesos entre 70 y 90 kg, con un caso atípico por debajo de 60 kg, mostrando una distribución de peso más uniforme. En el atletismo, se observa una amplia gama de pesos con muchos valores atípicos, tanto en las categorías de oro como de plata, reflejando la diversidad de eventos y tipos de cuerpo en este deporte. Finalmente, en el hockey, los pesos están más agrupados, con la mayoría de los jugadores rondando los 80 kg, lo que indica una homogeneidad en el perfil físico para este deporte.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Peso para mujeres</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Sport&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Weight&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;Medal&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df_2016_females</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;Set2&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribución de Peso por Medalla y Deporte para Mujeres en 2016&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Deporte&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Peso (kg)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Medalla&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/f7627ef5d2772fd3d9c6c0e8d9024c35ea6a045607b53d5935c371ce8cd2f6ec.png" src="_images/f7627ef5d2772fd3d9c6c0e8d9024c35ea6a045607b53d5935c371ce8cd2f6ec.png" />
+</div>
+</div>
+<p>En el análisis de las deportistas femeninas que ganaron medallas en los Juegos Olímpicos de 2016, encontramos patrones interesantes en la distribución de su peso por deporte y tipo de medalla. En el remo, los pesos están muy agrupados, con una uniformidad notable entre las atletas, aunque se observan algunos valores atípicos con pesos inferiores a 60 kg. En el atletismo, destaca la presencia de numerosos datos atípicos, especialmente entre las medallistas de plata, y un caso muy atípico en la categoría de oro, con un peso superior a 120 kg, que probablemente sea un error, ya que la mayoría de las atletas en este deporte pesan menos de 60 kg. En el fútbol, hockey y natación, las distribuciones de peso son bastante homogéneas, con las cajas de los diagramas de caja muy próximas entre sí y sin bigotes excesivamente largos, lo que indica una consistencia en el perfil físico de las atletas en estos deportes.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome to your Jupyter Book</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Ejercicio para entregar</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#descargue-el-conjunto-de-datos-y-formateelo-como-un-dataframe-de-pandas">1. Descargue el conjunto de datos y formatéelo como un DataFrame de pandas.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#filtrar-el-dataframe-para-ganadores-de-medallas-de-2016">2. Filtrar el DataFrame para Ganadores de Medallas de 2016</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#descubrir-las-medallas-concedidas-en-2016-por-deporte">3. Descubrir las Medallas Concedidas en 2016 por Deporte</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enumerar-los-cinco-deportes-mas-importantes">4. Enumerar los Cinco Deportes Más Importantes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generar-un-grafico-de-barras-para-los-cinco-deportes-principales">5. Generar un Gráfico de Barras para los Cinco Deportes Principales</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generar-un-histograma-para-la-edad-de-los-ganadores-de-medallas">6. Generar un Histograma para la Edad de los Ganadores de Medallas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grafico-de-barras-de-medallas-por-equipo-nacional">7. Gráfico de Barras de Medallas por Equipo Nacional</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grafico-de-barras-del-peso-medio-por-genero">8. Gráfico de Barras del Peso Medio por Género</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#segunda-parte">Segunda parte</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#filtrar-el-dataframe-para-ganadores-de-medallas-de-2016-en-los-deportes-especificos">2. Filtrar el DataFrame para Ganadores de Medallas de 2016 en los Deportes Específicos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#observar-las-caracteristicas-del-conjunto-de-datos">3. Observar las Características del Conjunto de Datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-para-patron-global-de-height-y-weight">4. Visualización para Patrón Global de Height y Weight</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-de-estadisticas-resumidas-de-height-y-weight-por-tipo-de-medalla-y-genero">5. Visualización de Estadísticas Resumidas de Height y Weight por Tipo de Medalla y Género</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
